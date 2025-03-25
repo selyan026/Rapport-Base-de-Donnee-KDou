@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mission 4</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<!--header -->
+<header>
+    <a href="" class="header_logo"> Kdou. </a>
+    <nav class="header_menu">
+        <a href="../../Accueil.html">accueil</a>
+        <a href="Mission1.html">mission1</a>
+        <a href="Mission2.html">mission2</a>
+        <a href="Mission3.html">mission3</a>
+        <a href="Mission4.html">mission4</a>
+    </nav>
+    <div class="header_buttons">
+        <a href="https://moodle.u-paris.fr/">Sign in</a>
+    </div>
+</header>
+<!--header-->
+<section class="home">
+    <div class="home_left">
+        <h1 class="title"> Mission 4</h1>
+    </div>
+</section>
+<!-- home-->
+
+<!-- Sommaire -->
+<div class="sommaire">
+    <h2>Sommaire</h2>
+    <ul>
+        <li><a href="#Intro">1. Introduction </a> </li>
+        <li><a href="#Images">2. Les Images</a></li>
+        <li><a href="#Tableaux">3. Les Tableaux</a>
+        <li><a href="#Autres">4. Autres fonctionnalitées</a></li>
+        <li><a href="#Conclusion">5. Conclusion</a></li>
+    </ul>
+</div>
+<!-- Contenu -->
+<div class="contenu">
+    <section id="Intro">
+        <h2>1. Introduction </h2>
+        <p>
+            Cette dernière mission consiste à la réalisation du contre rendu de notre SAE en base de données, avec ses 3 missions.
+            La particularité de ce rapport est qu’il est sous forme de document web, là où chaque page correspond à une partie :
+            introduction, synthèse des différentes missions, conclusion…
+            Pour la réalisation de ce rapport, il a fallu s’approprier les langages HTML pour la rédaction et CSS pour le style,
+            afin de concevoir un site web à la fois pratique, élégant et agréable.
+
+        </p>
+    </section>
+    <section id="Images">
+        <h2>2. Les images</h2>
+        <p>
+            Pour la réalisation de ce site, nous avons inséré de nombreuses images. Les images ont été ajoutées
+            dans le code de la page HTML, et le style (taille, couleur, position) dans la page CSS. Cette manipulation est possible
+            car nous avons préalablement enregistré les images dans le dossier 'images' situé dans le répertoire 'assets' de WebStorm.
+        </p>
+        <ul>
+            <li> Dans la page d'accueil, l'image en background est une image assez neutre dans avec des coleurs dans le thème du site.
+                Elle est située en haut de la page, et introduit le titre.
+                Elle permet d'apporter de l'esthétisme, et donne du relief à la page.
+            </li>
+            <li> Dans la partie "A PROPOS", nous avons ajouté des images de personnages pour nous représenter et rendre le site plus immersif.
+                Les images sont positionnées de façon alterné grace à la « variable » CSS grid-area.<br>
+                Nous avons ajouté un effet qui apparait lorsque la souris passe au dessus des images, rendant ainsi le site plus attractif.
+                L'image qui est en noir et blanc retrouve ces couleurs après le passage de la souris.<br>
+                <br>
+            </li>
+        </ul>
+    </section>
+    <section id="Tableaux">
+        <h2>3. Les tableaux</h2>
+        <p>
+            Durant la réalisation de notre site internet, nous avons aussi été aussi amenés à utiliser des tableaux.
+            Ces structures nous ont aidés à décrire un résultat possible d'une requête.
+            Une bonne utilisation des tableaux en HTML requiert 2 exigences : une bonne structuration, un style adapté.
+        </p>
+        <ul>
+            <li><h3>Structuration</h3>
+                Quand il s'agit de la bonne structuration nous avons décidé d'employer plusieurs structures sémantiques
+                présentes dans le langage HTML, comme par exemple les balises &lt;thead&gt; et &lt;tbody&gt;. Ces balises
+                permettent de structurer un tableau de manière claire et compréhensible, aussi bien pour les développeurs que pour
+                les outils comme les lecteurs d'écran.
+            </li>
+            <li> <h3>Style</h3>
+                D'autre part, pour rendre nos tableaux plus esthétiques et en conformité avec notre page web, nous avons
+                appliqué différents styles à ces derniers. Cela s'est fait par le biais d'une page CSS dans laquelle nous
+                avons inclus différentes propriétés telles que : « font-size: 20px ;» qui nous permettait de gérer la taille
+                des tableaux ou encore « border-collapse: collapse; » qui permet de fusionner les bordures des cellules
+                adjacentes du tableau et même « table tbody td:hover { color: #333333; } » qui permet de changer la couleur
+                des cases contenu dans notre &lt;tbody&gt; , lorsqu'elles sont survolées par la souris de l'utilisateur.
+            </li>
+
+        </ul>
+    </section>
+    <section id="Autres">
+        <h2>4. Autres fonctionnalitées </h2>
+            <p>
+                Pour ce premier site internet, nous avons intégré des fonctionnalités supplémentaires afin d'améliorer
+                la navigation et l'organisation du contenu. Ces ajouts ont pour objectif de rendre le site plus intuitif
+                et agréable à utiliser, tout en nous permettant de mettre en pratique nos compétences en HTML et CSS.
+                Ces choix reflètent notre volonté, de permettre aux utilisateurs une utilisation simple et efficace,
+                tout en respectant les bonnes pratiques de conception web.
+            </p>
+            <ul>
+                <li><h3>Notre Footer</h3>
+                    Dans notre projet de site web, nous avons intégré un footer pour fournir des informations essentielles
+                    tout en gardant un design épuré. Le footer est divisé en trois sections principales : "À propos",
+                    "Contact", et "Suivez-nous". <br><br>
+                    La section "À propos" présente une brève description de notre équipe, composée de 4 étudiants en
+                    BUT 1 Informatique. Nous utilisons une balise &lt;h3&gt; pour le titre et une balise &lt;p&gt;
+                    pour le texte descriptif.<br><br>
+                    Ensuite, la section "Contact" contient des informations pratiques, comme l'email du professeur
+                    et l'adresse physique, également présentées dans des balises  &lt;p&gt;. Cela permet une lecture facile et rapide.<br><br>
+                    Enfin, dans "Suivez-nous", nous avons ajouté des liens vers des réseaux sociaux et des icônes cliquables,
+                    ce qui permet à l'utilisateur de se connecter facilement avec nous.<br><br>
+                    Enfin, le footer se termine par un message de copyright, signalant les droits réservés à notre projet.
+                    Cela garantit un aspect professionnel tout en étant simple et fonctionnel.</li>
+            <li><h3>Notre Navbar</h3>
+                Dans notre projet, la navbar se compose de plusieurs éléments principaux : le logo, le menu de navigation,
+                et le bouton "Sign in".
+                Le logo est un lien vers la page d'accueil, offrant un accès rapide au site.
+                Le menu de navigation contient des liens vers différentes missions, permettant une navigation facile entre
+                les pages du site.
+                Enfin, le bouton "Sign in" renvoie à Moodle, offrant un accès direct à la plateforme de l'IUT.<br><br>
+                En ce qui concerne le style, nous avons appliqué des règles CSS pour améliorer l'interactivité et la présentation.
+                Par exemple, nous avons utilisé position: absolute; pour positionner certains éléments par rapport à leur conteneur.
+                Avec left: 0; et bottom: -2px;, nous avons ajusté l'emplacement d'une ligne décorative sous les liens du menu de
+                navigation. La ligne, créée avec content: ""; et height: 1px; width: 0;, commence avec une largeur de 0 et s'étend
+                lors du survol des éléments. Elle est colorée en noir grâce à background-color: #000;. L'effet de transition,
+                transition: 0.5s ease-out;, assure que cette animation se fait en douceur lorsque l'utilisateur interagit avec
+                la navbar, offrant une expérience fluide et agréable.
+            </li>
+            </ul>
+    </section>
+    <section id="Conclusion">
+        <h2>5. Conclusion</h2>
+        <p>
+            Pendant ce projet nous avons appris énormément par nous-même, tout le monde a mis du sien dans ce site,
+            les idées fusées de partout mais on devait garder que le meilleur.
+            Cela en a fait passer plus d'un d'entre nous des nuits blanches interminables
+            en raison d'un élément qui nous bloquer. Mais lorsqu'on y voit enfin le bout on était très satisfait.
+            On s'est documenté via des vidéos Youtube ou encore des sites pour connaître les syntaxes nécessaires.
+            On a peut-être quelques regrets concernant des élements qu'on aurait voulu ajouter mais ce n'était que bénin.
+
+
+        </p>
+    </section>
+
+</div>
+
+
+
+<a href="#" class="back-to-top">↑ Remonter vers le haut de page </a>
+
+<!--footer-->
+<footer class="footer">
+    <div class="footer-content">
+        <!-- Colonne 1 -->
+        <div class="footer-section">
+            <h3>À propos</h3>
+            <p>Fine équipe de 4 étudiants de l'IUT Rives-De-Seine en BUT 1 Informatique</p>
+        </div>
+
+
+        <!-- Colonne 2 -->
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>
+                Email du professeur: laurent.giustignano@u-paris.fr<br>
+                Adresse: 143 avenue de Versailles, 75016 Paris
+            </p>
+        </div>
+
+        <!-- Colonne 3 -->
+        <div class="footer-section">
+            <h3>Suivez-nous</h3>
+            <div class="lien-sociaux">
+                <a href="https://github.com/Crcos/Dev_SAE-S1-04"> <img src="../images/icons/github_img.png" class="footer-github" alt="Github logo"> </a>
+                <a href="https://u-paris.fr/"><img src="../images/icons/IUT-logo.png" class="footer-IUT" alt="logo IUT Paris Cité"> </a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Etudiant IUT Rives-De-Seine. Tous droits réservés.</p>
+    </div>
+</footer>
+<!--footer-->
+</body>
+</html>

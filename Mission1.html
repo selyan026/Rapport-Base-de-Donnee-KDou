@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mission 1</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!--header -->
+  <header>
+      <a href="#" class="header_logo"> Kdou. </a>
+      <nav class="header_menu">
+        <a href="../../Accueil.html">accueil</a>
+        <a href="Mission1.html">mission1</a>
+        <a href="Mission2.html">mission2</a>
+        <a href="Mission3.html">mission3</a>
+        <a href="Mission4.html">mission4</a>
+      </nav>
+      <div class="header_buttons">
+        <a href="https://moodle.u-paris.fr/">Sign in</a>
+      </div>
+  </header>
+  <!--header-->
+
+  <!-- home-->
+  <section class="home">
+    <div class="home_left">
+      <h1 class="title"> Mission 1</h1>
+    </div>
+  </section>
+  <!-- home-->
+
+  <!-- Sommaire -->
+  <div class="sommaire">
+    <h2>Sommaire</h2>
+    <ul>
+      <li><a href="#Contexte">1. Contexte </a> </li>
+      <li><a href="#Bilan">2. Bilan</a>
+        <ul>
+          <li><a href="#Exemple">2.1 Exemple requête</a></li>
+        </ul>
+      </li>
+      <li><a href="#Perspective">3. Perspective</a>
+      <li><a href="#Conclusion">4. Conclusion</a></li>
+
+    </ul>
+  </div>
+  <!-- Contenu -->
+  <div class="contenu">
+    <section id="Contexte">
+      <h2>1. Contexte</h2>
+      <p>
+        L’objectif de cette mission est de prendre en main le sujet et les données fournies par l’entreprise Kdou.
+        Pour cela, un classeur Excel a été mis à notre disposition, avec une feuille par table de base de Données.
+        Ce support nous a permis de répondre à des questions spécifiques de l’entreprise.
+        La base de données est composée de 6 tables :
+        Fournisseur, Produit, Catégorie, Clientèle, Commande, DétailCommande.
+      </p>
+    </section>
+
+    <section id="Bilan">
+      <h2>2. Bilan</h2>
+      <div id="Analyse">
+        <p>
+          La mission est divisé en 3 parties. Dans une première partie, nous effectuons une analyse des clés primaires, puis secondaires
+          et enfin nous finissons par la réalisation de requêtes sur le fichier EXCEL.
+
+          Analyse des clés primaires : Les données sont structurées en plusieurs tables avec des clés primaires
+          pour chaque table (comme N°Fournisseur pour Fournisseur ou Code Client pour Clientèle)
+          permettant d’identifier chaque entrée de façon unique.
+          Les clés étrangères relient les tables entre elles :
+          par exemple, Produit contient le N°Fournisseur et le Code Catégorie pour lier chaque produit à son fournisseur et sa catégorie.
+          La table Commande utilise le Code Client pour associer une commande à un client,
+          tandis que DetailCommande relie chaque détail de commande à un produit et à une commande grâce aux références Ref produit et N°Commande.
+
+
+        </p>
+      </div>
+      <div id="Exemple">
+        <h3>2.2 Exemple requête</h3>
+        <p> Afin d'obtenir une information précise, nous avons apppliqué des filtres, pour réduire les tables à la réponse souhaité.
+          Voici quelques exemples de requêtes:<br></p>
+
+        <span> REQUETE : Combien y a-t-il de clients de région parisienne ? Réponse : Il y a 3 clients de région parisienne <br></span>
+        <table class="tab1">
+          <thead>
+          <tr>
+            <th> Code Client </th>
+            <th> Société </th>
+            <th> Contact </th>
+            <th> Ville </th>
+            <th> Pays </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>ALYAD</td>
+            <td>Chez Bouxou</td>
+            <td>Alyssa Duranta</td>
+            <td>Paris</td>
+            <td>France</td>
+          </tr>
+          <tr>
+            <td>FAMIA</td>
+            <td>ChefFamilia</td>
+            <td>Aria Cruz</td>
+            <td>Paris</td>
+            <td>France</td>
+          </tr>
+          <tr>
+            <td>FISSA</td>
+            <td>Une petite faim</td>
+            <td>Diego Roel</td>
+            <td>Paris</td>
+            <td>France</td>
+          </tr>
+          </tbody>
+        </table>
+        <span> REQUETE: Combien y a-t-il de pays dans l’UE autre que la France ? Réponse: il y en a 7.<br></span>
+        <p>
+          Cet exemple illustre bien les limites de la méthode de filtrage. Tout d'abord, EXCEL ne permet pas de compter directement les lignes,
+          ce qui nous oblige à faire un décompte manuel des pays, alors que le fichier est censé faciliter la lecture des données.
+          De plus, pour sélectionner les pays de l'UE, chaque pays a dû être choisi individuellement, une manipulation qui augmente
+          le risque d'erreurs par rapport à une requête "automatisée" dans une base de données.
+        </p>
+      </div>
+
+    </section>
+
+    <section id="Perspective">
+      <h2>3. Perspective d'amélioration</h2>
+        <p>
+      Nous avons remarqué certains problèmes sur les données de l’entreprise qui pourraient ralentir son développement,
+impactant l’efficacité et la rentabilité de KDou :
+
+  Par exemple : Sao polo et São polo apparaissent comme deux entrées distinctes dans la table des fournisseurs,
+bien qu’il s’agisse de la même ville. Cela résulte en une double entrée pour un même lieu.
+Pour y remédier on pourrait normaliser les données en appliquant des règles d’écriture uniformes et standard.
+
+  De plus on retrouve des incohérences dans les intitulés : Royaume-Uni est écrit deux fois, une fois avec un tiret et une fois sans,
+et les titres de certains postes (ex. : représentante vs. représentant) présentent des variations d’orthographe.
+Pour réagir face à ce problème on pourrait mettre en place un logiciel permettant de détecter et corriger,
+les doublons et fautes d’orthographes.
+
+  Certains codes clients sont référencés sans que le client n’ait passé de commande, comme FRANCK,
+ce qui suggère des erreurs ou des données manquantes.
+Pour y remédier, on pourrait faire en sorte de vérifier les données avant son importation dans la base.
+        </p>
+    </section>
+    <section id="Conclusion">
+      <h2>4. Conclusion</h2>
+      <p>
+        L’étude de données révèle une organisation assez satisfaisante.
+        La plupart des requetes demandées par l'entreprise KDOu ont pu être
+        réalisé avec succès.
+        Cependant, certains éléments de la base de données, pourraient être plus optimisés afin d'assurer une meilleure qualité de l'information
+        et donc une meilleure performance de l’entreprise. En effet, le filtrage des colonnes est efficace, mais reste limité.
+        EXCEL n'est peut etre pas le meilleur outil pour ce type de requête. Nous suggerons plutot l'utilisation d'ACCESS, qui
+        est un outil similaire mais plus précis encore, avec l'usage de langage tel que SQL et QBE.
+      </p>
+    </section>
+  </div>
+
+<a href="#" class="back-to-top">↑ Remonter vers le haut de page </a>
+  <!--footer-->
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Colonne 1 -->
+      <div class="footer-section">
+        <h3>À propos</h3>
+        <p>Fine équipe de 4 étudiants de l'IUT Rives-De-Seine en BUT 1 Informatique</p>
+      </div>
+
+
+      <!-- Colonne 2 -->
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>
+          Email du professeur: laurent.giustignano@u-paris.fr<br>
+          Adresse: 143 avenue de Versailles, 75016 Paris
+        </p>
+      </div>
+
+      <!-- Colonne 3 -->
+      <div class="footer-section">
+        <h3>Suivez-nous</h3>
+        <div class="lien-sociaux">
+          <a href="https://github.com/Crcos/Dev_SAE-S1-04"> <img src="../images/icons/github_img.png" class="footer-github" alt="Github logo"> </a>
+          <a href="https://u-paris.fr/"><img src="../images/icons/IUT-logo.png" class="footer-IUT" alt="logo IUT Paris Cité"> </a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <p>&copy; 2024 Etudiant IUT Rives-De-Seine. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <!--footer-->
+</body>
+</html>

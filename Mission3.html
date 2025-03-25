@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mission 3</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!--header -->
+  <header>
+    <a href="" class="header_logo"> Kdou. </a>
+    <nav class="header_menu">
+      <a href="../../Accueil.html">accueil</a>
+      <a href="Mission1.html">mission1</a>
+      <a href="Mission2.html">mission2</a>
+      <a href="Mission3.html">mission3</a>
+      <a href="Mission4.html">mission4</a>
+    </nav>
+
+    <div class="header_buttons">
+      <a href="https://moodle.u-paris.fr/">Sign in</a>
+    </div>
+  </header>
+  <!--header-->
+  <!-- home-->
+  <section class="home">
+    <div class="home_left">
+      <h1 class="title"> Mission 3</h1>
+    </div>
+  </section>
+  <!-- home-->
+  <!-- Sommaire -->
+  <div class="sommaire">
+    <h2>Sommaire</h2>
+    <ul>
+      <li><a href="#Contexte">1. Contexte </a> </li>
+      <li><a href="#Thème">2. Thème</a>
+        <ul>
+          <li><a href="#Desserts/Boissons">2.1 Desserts/Boissons </a>
+            <ul>
+              <li><a href="#Indicateur1-1">a. 1er Indicateur</a>
+                <ul>
+                  <li><a href="#2.1.aEnoncé"> Enoncé </a></li>
+                  <li><a href="#2.1.aConstruction"> Construction </a></li>
+                  <li><a href="#2.1.aSQL"> SQL </a></li>
+                  <li><a href="#2.1.aRésultat"> Résultat </a></li>
+                </ul>
+              </li>
+              <li><a href="#Indicateur1-2">b. 2ème Indicateur</a>
+                <ul>
+                  <li><a href="#2.1.bEnoncé"> Enoncé </a></li>
+                  <li><a href="#2.1.bConstruction"> Construction </a></li>
+                  <li><a href="#2.1.bSQL"> SQL </a></li>
+                  <li><a href="#2.1.bRésultat"> Résultat </a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#Offre">2.2 L'Offre de KDou</a>
+            <ul>
+              <li><a href="#Indicateur2-1">a. 1er Indicateur</a>
+                <ul>
+                  <li><a href="#2.2.aEnoncé"> Enoncé </a></li>
+                  <li><a href="#2.2.aConstruction"> Construction </a></li>
+                  <li><a href="#2.2.aSQL"> SQL </a></li>
+                  <li><a href="#2.2.aRésultat"> Résultat </a></li>
+                </ul>
+              </li>
+              <li><a href="#Indicateur2-2">b. 2ème Indicateur</a>
+                <ul>
+                  <li><a href="#2.2.bEnoncé"> Enoncé </a></li>
+                  <li><a href="#2.2.bConstruction"> Construction </a></li>
+                  <li><a href="#2.2.bSQL"> SQL </a></li>
+                  <li><a href="#2.2.bRésultat"> Résultat </a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#Provenance">2.3 La Provenance des Produits</a>
+            <ul>
+              <li><a href="#Indicateur3-1">a. 1er Indicateur</a>
+                <ul>
+                  <li><a href="#2.3.aEnoncé"> Enoncé </a></li>
+                  <li><a href="#2.3.aConstruction"> Construction </a></li>
+                  <li><a href="#2.3.aSQL"> SQL </a></li>
+                  <li><a href="#2.3.aRésultat"> Résultat </a></li>
+                </ul>
+              </li>
+              <li><a href="#Indicateur3-2">b. 2ème Indicateur</a>
+                <ul>
+                  <li><a href="#2.3.bEnoncé"> Enoncé </a></li>
+                  <li><a href="#2.3.bConstruction"> Construction </a></li>
+                  <li><a href="#2.3.bSQL"> SQL </a></li>
+                  <li><a href="#2.3.bRésultat"> Résultat </a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#Clientèle">2.4 La clientèle</a>
+            <ul>
+              <li><a href="#Indicateur4-1">a. 1er Indicateur</a>
+                <ul>
+                  <li><a href="#2.4.aEnoncé"> Enoncé </a></li>
+                  <li><a href="#2.4.aConstruction"> Construction </a></li>
+                  <li><a href="#2.4.aSQL"> SQL </a></li>
+                  <li><a href="#2.4.aRésultat"> Résultat </a></li>
+                </ul>
+              </li>
+              <li><a href="#Indicateur4-2">b. 2ème Indicateur</a>
+                <ul>
+                  <li><a href="#2.4.bEnoncé"> Enoncé </a></li>
+                  <li><a href="#2.4.bConstruction"> Construction </a></li>
+                  <li><a href="#2.4.bSQL"> SQL </a></li>
+                  <li><a href="#2.4.bRésultat"> Résultat </a></li>
+                </ul>
+              </li>
+            </ul>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!--contenu-->
+  <div class="contenu">
+    <section id="Contexte">
+      <h2>1. Contexte</h2>
+      <p>
+        L’objectif de cette troisième mission est d’exploiter la base de données de l’entreprise KDou pour produire des analyses et indicateurs pertinents.
+      </p>
+    </section>
+
+    <section id="Thème">
+      <h2>2. Thème</h2>
+      <section id="Desserts/Boissons">
+        <h2> 2.1 Desserts/Boissons</h2>
+
+        <!--1er Indicateur-->
+        <div id="Indicateur1-1">
+          <h3> 1er indicateur</h3>
+          <div id="2.1.aEnoncé">
+            <h4>Enoncé</h4>
+            <p>
+              Quels sont les pays de provenance de ces catégories ?
+            </p>
+          </div>
+          <div id="2.1.aConstruction">
+            <h4>Construction</h4>
+            <div class="construction">
+              <strong>Données nécessaires:</strong><br>
+              La table Produit pour récuperer les catégories de produit (CodeCateg)<br>
+              La table Fournisseur pour récupérer les informations sur les fournisseurs, dont le Pays.<br>
+              <strong>Relations:</strong><br>
+              Il existe une relation entre les tables Produit et Fournisseur<br>
+              <strong>Filtrage des catégories:</strong><br>
+              On veut que les produits qui appartiennent au catégories 1 ou 3.<br>
+              <strong>Résultat attendu:</strong><br>
+              La requête doit retourner CodeCateg et Pays. On ne veut pas de doublons.
+
+            </div>
+          </div>
+          <div id="2.1.aSQL">
+            <h4>SQL</h4>
+            <div class="div_avec_bordure">
+              SELECT DISTINCT Produit.CodeCateg, Fournisseur.Pays<br>
+              FROM Fournisseur INNER JOIN Produit ON Fournisseur.NoFour = Produit.NoFour<br>
+              WHERE (((Produit.CodeCateg)=1 Or (Produit.CodeCateg)=3));<br>
+            </div>
+          </div>
+          <div id="2.1.aRésultat">
+            <h4>Résultat</h4>
+            <img src="../images/mission3/resultat1-1.PNG" alt="Résultat 1-1">
+          </div>
+        </div>
+        <!-- 2ème Indicateur -->
+        <div id="Indicateur1-2">
+          <h3> 2ème indicateur</h3>
+          <div id="2.1.bEnoncé">
+            <h4>Enoncé</h4>
+            <p>On veut le chiffre d’affaire généré par catégorie desserts ou catégorie.</p>
+          </div>
+          <div id="2.1.bConstruction">
+            <h4>Construction</h4>
+            <div class="construction">
+              <strong>Données nécessaires:</strong><br>
+              La table Catégorie pour récuperer les catégories de produit (CodeCateg)<br>
+              La table Produit pour récupérer le prix unitaire d'un produit (PrisUnit) et (CodeCateg).<br>
+              <strong>Relations:</strong><br>
+              Il existe une relation entre les tables Catégorie et Produit. (par jointure)<br>
+              <strong>Agrégation:</strong><br>
+              On utilisera la fonction SUM qui calcul la somme des prix unitaires (PrixUnit).<br>
+              <strong>Regroupement:</strong><br>
+              GROUP BY regroupe les résultats par rapport au CodeCateg de la table Categorie.<br>
+              <strong>Filtrage:</strong><br>
+              Avec HAVING, permet de limiter les résultats aux catégories qui appartiennent au catégories égal à 1 ou 3.<br>
+              <strong>Résultat attendu:</strong><br>
+              La requête doit retourner les catégories 1 et 3 avec leur chiffre d'affaire. (La somme des prix unitaires pour chaque catégorie.)
+            </div>
+          </div>
+          <div id="2.1.bSQL">
+            <h4>SQL</h4>
+            <div class="div_avec_bordure">
+              SELECT Categorie.CodeCateg, Sum(Produit.PrixUnit)AS SommeDePrixUnit<br>
+              FROM Categorie INNER JOIN Produit ON Categorie.CodeCateg = Produit.CodeCateg<br>
+              GROUP BY Categorie.CodeCateg<br>
+              HAVING (((Categorie.CodeCateg)=1)) Or (((Categorie.CodeCateg)=3));<br>
+            </div>
+          </div>
+          <div id="2.1.bRésultat">
+            <h4>Résultat</h4>
+            <img src="../images/mission3/resultat1-2.PNG" alt="Résultat 1-2">
+          </div>
+        </div>
+      </section>
+
+      <section id="Offre">
+        <h2> 2.2 L'offre de KDou</h2>
+        <div id="Indicateur2-1">
+          <h3> 1er indicateur</h3>
+          <div id="2.2.aEnoncé">
+            <h4>Enoncé</h4>
+            <p>
+              Donner des informations sur les fournisseurs qui proposent des produits qui ne sont pas
+              commandés actuellement ?
+            </p>
+          </div>
+          <div id="2.2.aConstruction">
+            <h4>Construction</h4>
+            <div class="construction">
+              <strong>Données nécessaires:</strong><br>
+              La table Produit pour récuperer les références des produits (RefProd).<br>
+              La table DetailCommande pour récuperer les références des produits dans la commande (RefProd).<br>
+              La table Fournisseur pour récupérer les informations des fournisseurs, dont Contact, sa Fonction et son identifiant (NoFour).<br>
+              <strong>Relations:</strong><br>
+              Il existe une relation entre les tables Produit et Fournisseur, NoFour. (par jointure)<br>
+              <strong>Filtrage:</strong><br>
+              Avec WHERE et NOT IN, on veut les réferences des produits qui n'ont pas été commandées (qui ne sont pas dans DetailCommande).<br>
+              <strong>Sous requête:</strong><br>
+              Tous les références de produit dans la table DetailCommande.<br>
+              <strong>Résultat attendu:</strong><br>
+              La requête doit retourner le Contact et la Fonction des fournisseurs. On ne veut pas de doublons.<br>
+            </div>
+          </div>
+          <div id="2.2.aSQL">
+            <h4>SQL</h4>
+            <div class="div_avec_bordure">
+              SELECT DISTINCT Fournisseur.Contact, Fournisseur.Fonction<br>
+              FROM Produit INNER JOIN Fournisseur ON Produit.NoFour= Fournisseur.NoFour<br>
+              WHERE Produit.RefProd NOT IN (SELECT DetailCommande.RefProd FROM<br>
+              DetailCommande)<br>
+              ORDER BY 1, 2 ;<br>
+            </div>
+          </div>
+          <div id="2.2.aRésultat">
+            <h4>Résultat</h4>
+            <img src="../images/mission3/resultat2-1.PNG" alt="Résultat 2-1">
+          </div>
+        </div>
+        <!-- 2ème Indicateur -->
+        <div id="Indicateur2-2">
+          <h3> 2ème indicateur</h3>
+          <div id="2.2.bEnoncé">
+            <h4>Enoncé</h4>
+            <p>Quels sont les pays qui ont une offre importante de produit ?</p>
+          </div>
+          <div id="2.2.bConstruction">
+            <h4>Construction</h4>
+            <div class="construction">
+              <strong>Données nécessaires:</strong><br>
+              La table Produit pour récuperer les références des produits (RefProd).<br>
+              La table Fournisseur pour récupérer les informations des fournisseurs, dont le Pays.<br>
+              <strong>Relations:</strong><br>
+              Il existe une relation entre les tables Produit et Fournisseur, NoFour. (par jointure)<br>
+              <strong>Agrégation:</strong><br>
+              COUNT qui compte le nombre des références de produit.<br>
+              <strong>Filtrage par regroupement:</strong><br>
+              On utilise GROUP BY pour regrouper les résultats par rapport au Pays dans la table Fournisseur.<br>
+              <strong>Résultat attendu:</strong><br>
+              La requête doit retourner le Pays dans la table Fournisseur et le nombre de Produit par rapport au Pays.<br>
+            </div>
+          </div>
+          <div id="2.2.bSQL">
+            <h4>SQL</h4>
+            <div class="div_avec_bordure">
+              SELECT DISTINCT Fournisseur.Pays, COUNT (Produit.RefProd) AS NbProd<br>
+              FROM Produit<br>
+              INNER JOIN Fournisseur ON Produit.NoFour=Fournisseur.NoFour<br>
+              GROUP BY Fournisseur.Pays<br>
+              ORDER BY 1,2 ;<br>
+            </div>
+          </div>
+          <div id="2.2.bRésultat">
+            <h4>Résultat</h4>
+            <img src="../images/mission3/resultat2-2.PNG" alt="Résultat 2-2">
+          </div>
+        </div>
+      </section>
+
+      <section id="Provenance">
+        <h2> 2.3 La Provenance des Produits</h2>
+
+        <div id="Indicateur3-1">
+          <h3>1er indicateur</h3>
+          <div id="2.3.aEnoncé">
+            <h4>Enoncé</h4>
+            <p>
+              Quels fournisseurs vendent uniquement des boissons ou des desserts ?
+            </p>
+          </div>
+          <div id="2.3.aConstruction">
+            <h4>Construction</h4>
+            <div class="construction">
+              <strong>Données nécessaires:</strong><br>
+              La table Produit pour récuperer l'identifiant NoFour et CodeCateg.<br>
+              La table Fournisseur pour récupérer les informations des fournisseurs, dont le nom de la société.<br>
+              <strong>Relations:</strong><br>
+              Il existe une relation entre les tables Produit et Fournisseur, NoFour. (par jointure)<br>
+              Il existe une autre relation, entre Catégorie et Produit, CodeCateg (par jointure).<br>
+              <strong>Filtrage:</strong><br>
+              Avec WHERE, on sélectionne ceux où les noms des catégories sont Boissons ou Desserts dans la table Catégorie.<br>
+              <strong>Résultat attendu:</strong><br>
+              La requête doit retourner le nom de la société de la table Fournisseur.<br>
+            </div>
+          </div>
+          <div id="2.3.aSQL">
+            <h4>SQL</h4>
+            <div class="div_avec_bordure">
+              SELECT DISTINCT F.Societe<br>
+              FROM (Fournisseur F INNER JOIN Produit P ON F.NoFour=P.NoFour)<br>
+              INNER JOIN Categorie Ca ON Ca.CodeCateg=P.CodeCateg<br>
+              WHERE Ca.NomCateg="Boissons" or Ca.NomCateg= "Desserts"<br>
+              ORDER BY 1;<br>
+            </div>
+          </div>
+          <div id="2.3.aRésultat">
+            <h4>Résultat</h4>
+            <img src="../images/mission3/resultat3-1.PNG" alt="Résultat 3-1">
+          </div>
+        </div>
+
+        <!-- 2ème Indicateur -->
+        <div id="Indicateur3-2">
+          <h3>2ème indicateur</h3>
+          <div id="2.3.bEnoncé">
+            <h4>Enoncé</h4>
+            <p>Y en a-t-il qui vendent les deux boissons et desserts ?</p>
+          </div>
+          <div id="2.3.bConstruction">
+            <h4>Construction</h4>
+            <div class="construction">
+              <strong>Données nécessaires:</strong><br>
+              La table Produit pour récuperer l'identifiant NoFour et CodeCateg.<br>
+              La table Fournisseur pour récupérer les informations des fournisseurs, dont le nom de la société.<br>
+              <strong>Relations:</strong><br>
+              Il existe une relation entre les tables Produit et Fournisseur, NoFour. (par jointure)<br>
+              Il existe une autre relation, entre Catégorie et Produit, CodeCateg (par jointure).<br>
+              <strong>Filtrage:</strong><br>
+              Avec WHERE et IN, on veut sélectionner ceux où les noms des catégories sont Boissons ou Desserts compris dans l'ensemble de la table Catégorie.<br>
+              Par regroupement avec GROUP BY, on regroupe en fonction du nom de la société de la table Fournisseur.<br>
+              Le HAVING COUNT utilisée permet d'avoir en résultat que les fournisseurs qui proposent deux catégories dont Boissons et Desserts.<br>
+              <strong>Résultat attendu:</strong><br>
+              La requête doit retourner le nom de la société de la table Fournisseur. On ne veut pas de doublons.<br>
+            </div>
+          </div>
+          <div id="2.3.bSQL">
+            <h4>SQL</h4>
+            <div class="div_avec_bordure">
+              SELECT DISTINCT F.Societe<br>
+              FROM (Fournisseur F INNER JOIN Produit P ON F.NoFour=P.NoFour)<br>
+              INNER JOIN Categorie Ca ON Ca.CodeCateg=P.CodeCateg<br>
+              WHERE Ca.NomCateg IN("Boissons","Desserts")<br>
+              GROUP BY F.Societe<br>
+              HAVING COUNT(Ca.NomCateg)=2 ;<br>
+            </div>
+          </div>
+          <div id="2.3.bRésultat">
+            <h4>Résultat</h4>
+            <img src="../images/mission3/resultat3-2.PNG" alt="Résultat 3-2">
+          </div>
+        </div>
+      </section>
+
+      <section id="Clientèle">
+        <h2> 2.4 La clientèle</h2>
+        <!--1er indicateur-->
+        <div id="Indicateur4-1">
+          <h3>1er indicateur</h3>
+          <div id="2.4.aEnoncé">
+            <h4>Enoncé</h4>
+            <p>
+              Certains clients n’ont jamais eu la remise la plus importante de 25%. Qui sont-ils ?
+            </p>
+          </div>
+          <div id="2.4.aConstruction">
+            <h4>Construction</h4>
+            <div class="construction">
+              <strong>Données nécessaires:</strong><br>
+              La table Client pour récuperer les informations des Clients, dont le code et la société du client.<br>
+              La table Commande pour récupérer l'identifiant de la commande (NoCom) et CodeCli.<br>
+              La table DetailCommande pour récupérer NoCom et la Remise.<br>
+              <strong>Relations:</strong><br>
+              Il existe une relation entre les tables Client et Commande, CodeCli. (par jointure)<br>
+              <strong>Filtrage:</strong><br>
+              Avec WHERE et NOT IN, on ne veut pas numéro de commande de la table Commande dont les remises est égales à 25% de la table DetailCommande.<br>
+              <strong>Sous-requête:</strong><br>
+              Les commandes dont la remise est à 25% est à exclure.<br>
+              <strong>Résultat attendu:</strong><br>
+              La requête doit retourner le code et la société client de la table Client. On ne veut pas de doublons.<br>
+            </div>
+          </div>
+          <div id="2.4.aSQL">
+            <h4>SQL</h4>
+            <div class="div_avec_bordure">
+              SELECT DISTINCT Client.CodeCli, Client.SocieteCli<br>
+              FROM Client INNER JOIN Commande ON Client.CodeCli=Commande.CodeCli<br>
+              WHERE Commande.NoCom NOT IN (SELECT DetailCommande.NoCom<br>
+              FROM DetailCommande<br>
+              WHERE DetailCommande.Remise=25)<br>
+              ORDER BY 1, 2;<br>
+
+            </div>
+          </div>
+          <div id="2.4.aRésultat">
+            <h4>Résultat</h4>
+            <img src="../images/mission3/resultat4-1.PNG" alt="Résultat 4-1">
+          </div>
+        </div>
+
+        <!-- 2ème Indicateur -->
+        <div id="Indicateur4-2">
+          <h3>2ème indicateur</h3>
+          <div id="2.4.bEnoncé">
+            <h4>Enoncé</h4>
+            <p>Quels produits n’ont eu que des remises de 10% ou 20%  ou pas de remise ?</p>
+          </div>
+          <div id="2.4.bConstruction">
+            <h4>Construction</h4>
+            <div class="construction">
+              <strong>Données nécessaires:</strong><br>
+              La table Produit pour récuperer les références de produit (RefProd) et le nom des produits (NomProd).<br>
+              La table DetailCommande pour récupérer RefProd et la Remise.<br>
+              <strong>Relations:</strong><br>
+              Il existe une relation entre les tables Produit et DetailCommande, RefProd. (par jointure)<br>
+              <strong>Filtrage:</strong><br>
+              Avec WHERE et NOT IN, on ne veut pas les références de produit de la table Produit dont les remises sont égales à 0% ou 10% ou 20% de la table DetailCommande.<br>
+              <strong>Sous-requête:</strong><br>
+              Les commandes dont la remise est à 0% ou 10% ou 20% est à exclure.<br>
+              <strong>Résultat attendu:</strong><br>
+              La requête doit retourner les références de produit et leur nom. On ne veut pas de doublons.<br>
+            </div>
+          </div>
+          <div id="2.4.bSQL">
+            <h4>SQL</h4>
+            <div class="div_avec_bordure">
+              SELECT DISTINCT Produit.RefProd, Produit.NomProd<br>
+              FROM Produit<br>
+              INNER JOIN DetailCommande ON Produit.RefProd =<br>
+              DetailCommande.RefProd<br>
+              WHERE Produit.RefProd NOT IN (SELECT DetailCommande.RefProd<br>
+              FROM DetailCommande<br>
+              WHERE DetailCommande.Remise NOT IN (0,0.1,0.2))<br>
+              ORDER BY 1,2 ;<br>
+            </div>
+          </div>
+          <div id="2.4.bRésultat">
+            <h4>Résultat</h4>
+            <img src="../images/mission3/resultat4-2.PNG" alt="Résultat 4-2">
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+
+  <a href="#" class="back-to-top">↑ Remonter vers le haut de page </a>
+  <!--footer-->
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Colonne 1 -->
+      <div class="footer-section">
+        <h3>À propos</h3>
+        <p>Fine équipe de 4 étudiants de l'IUT Rives-De-Seine en BUT 1 Informatique</p>
+      </div>
+
+
+      <!-- Colonne 2 -->
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>
+          Email du professeur: laurent.giustignano@u-paris.fr<br>
+          Adresse: 143 avenue de Versailles, 75016 Paris
+        </p>
+      </div>
+
+      <!-- Colonne 3 -->
+      <div class="footer-section">
+        <h3>Suivez-nous</h3>
+        <div class="lien-sociaux">
+          <a href="https://github.com/Crcos/Dev_SAE-S1-04"> <img src="../images/icons/github_img.png" class="footer-github" alt="Github logo"> </a>
+          <a href="https://u-paris.fr/"><img src="../images/icons/IUT-logo.png" class="footer-IUT" alt="logo IUT Paris Cité"> </a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <p>&copy; 2024 Etudiant IUT Rives-De-Seine. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <!--footer-->
+</body>
+</html>

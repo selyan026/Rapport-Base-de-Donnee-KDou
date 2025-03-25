@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mission 2</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!--header -->
+  <header>
+      <a href="" class="header_logo"> Kdou. </a>
+      <nav class="header_menu">
+        <a href="../../Accueil.html">accueil</a>
+        <a href="Mission1.html">mission1</a>
+        <a href="Mission2.html">mission2</a>
+        <a href="Mission3.html">mission3</a>
+        <a href="Mission4.html">mission4</a>
+      </nav>
+
+      <div class="header_buttons">
+        <a href="https://moodle.u-paris.fr/">Sign in</a>
+      </div>
+  </header>
+  <!--header-->
+  <!-- home-->
+  <section class="home">
+    <div class="home_left">
+      <h1 class="title"> Mission 2</h1>
+    </div>
+  </section>
+  <!-- home-->
+  <!-- Sommaire -->
+  <div class="sommaire">
+    <h2>Sommaire</h2>
+    <ul>
+      <li><a href="#Contexte">1. Contexte </a> </li>
+      <li><a href="#1er_Indicateur_intéressant">2. 1er Indicateur intéressant pour KDou</a>
+        <ul>
+          <li><a href="#1er_Interprétation">2.1 Énoncé/Interprétation</a></li>
+          <li><a href="#1er_resultat">2.2 Résultat</a></li>
+          <li><a href="#1er_QBE/SQL">2.3 QBE/SQL</a></li>
+        </ul>
+      </li>
+      <li><a href="#2ème_Indicateur_intéressant">3. 2ème Indicateur intéressant pour KDou</a>
+        <ul>
+          <li><a href="#2ème_Interprétation">3.1 Énoncé/Interprétation</a></li>
+          <li><a href="#2ème_resultat">3.2 Résultat</a></li>
+          <li><a href="#2ème_QBE/SQL">3.1 QBE/SQL</a></li>
+        </ul>
+      </li>
+      <li><a href="#3ème_Indicateur_intéressant">4. 3ème Indicateur intéressant pour KDou</a>
+        <ul>
+          <li><a href="#3ème_Interprétation">4.1 Énoncé/Interprétation</a></li>
+          <li><a href="#3ème_resultat">4.2 Résultat</a></li>
+          <li><a href="#3ème_QBE/SQL">4.3 QBE/SQL</a></li>
+        </ul>
+      </li>
+      <li><a href="#4ème_Indicateur_intéressant">5. 4ème Indicateur intéressant pour KDou</a>
+        <ul>
+          <li><a href="#4ème_Interprétation">5.1 Énoncé/Interprétation</a></li>
+          <li><a href="#4ème_resultat">5.2 Résultat</a></li>
+          <li><a href="#4ème_QBE/SQL">5.3 QBE/SQL</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Contenu -->
+  <div class="contenu">
+    <section id="Contexte">
+      <h2>1. Contexte</h2>
+      <p>
+        L'objectif de cette mission est d'exploiter la base de données de l'entreprise KDou à travers une interface low code
+        , ici le QBE. En effet cet outil permet de générer des requêtes en SQL via une interface et des moyens plus simplifiés,
+        qui ne nécessite pas l'apprentissage du langage. Cette alternative peut constituer une aide, mais en aucun cas un moyen
+        sur lequel on peut se reposer uniquement.
+      </p>
+    </section>
+    <section id="indicateur">
+      <h2>Les Indicateurs</h2>
+    <section id="1er_Indicateur_intéressant">
+      <h2> 2. 1er Indicateur intéressant pour KDou</h2>
+      <div id="1er_Interprétation">
+        <h3>2.1 Énoncé/Interprétation</h3>
+        <p>
+          Quels sont les produits d’Italie ou d’Allemagne vendus 50€ ou
+          moins? On veut connaitre leurs: noms, prix, nom du fournisseur, ville et pays
+          d’origine.<br>Cette requête permet à l’entreprise de comparer rapidement une gamme de produit selon le pays et le prix de ces derniers.
+        </p>
+      </div>
+      <div id="1er_resultat">
+        <h3>2.2 Résultat</h3>
+        <div class="res1_mission2"><img src="../images/mission2/1er_Résultat_Mission2.jpg" alt ="res1_mission2"></div>
+      </div>
+      <div id="1er_QBE/SQL">
+        <h3>2.3 QBE/SQL</h3>
+        <pre>
+          <br> <br>SELECT Fournisseur.Pays, Fournisseur.Contact,<br>
+          Fournisseur.Ville, Produit.PrixUnit, Produit.NomProd
+          <br>FROM Fournisseur INNER JOIN Produit <br>
+          ON Fournisseur.NoFour = Produit.NoFour
+          <br>WHERE (((Fournisseur.Pays) Like "*Itaile*") <br>
+          AND ((Produit.PrixUnit&lt;=50)) OR ((Fournisseur.Pays) <br>
+          Like "*Allemagne*") AND ((Produit.PrixUnit)&lt;= 50));
+        </pre>
+      </div>
+    </section>
+
+    <section id="2ème_Indicateur_intéressant">
+      <h2> 3. 2ème Indicateur intéressant pour KDou</h2>
+      <div id="2ème_Interprétation">
+        <h3>3.1 Énoncé/Interprétation</h3>
+        <p>
+          Combien y a-t-il de clients nantais ? <br>
+          Cette requête peut permettre à l’entreprise de comprendre qu’il faut booster leur communication
+          dans la ville de Nantes car il y a trop peu de clients, cela peut aussi être résolu par un système
+          de fidélisation client plus élaboré. Mais aussi, elle peut permettre de mettre en critère n’importe
+          quelle autre ville et analyser son influence dans cette dernière.
+        </p>
+      </div>
+      <div id="2ème_resultat">
+        <h3>3.2 Résultat</h3>
+        <table class="tab_res2">
+          <thead>
+          <tr>
+            <th>VilleCli</th>
+            <th>NbContactCli</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Nantes</td>
+            <td>3</td>
+          </tr>
+          </tbody>
+        </table>
+        <p>
+         Résultat à mettre sous forme de tableau: une colonne pour la VilleCli et une pour le COUNT.
+          Dans la colonne VilleCli on a que une case qui est "Nantes" et dans la colonne COUNT
+          on a que une case avec le chiffre "3".
+        </p>
+      </div>
+      <div id="2ème_QBE/SQL">
+        <h3>3.3 QBE/SQL</h3>
+        <pre>
+          <br><br>SELECT Count(Client.ContactCli) AS CompteDeContactCli,<br>
+          Client.VilleCli
+          <br>FROM Client
+          <br>GROUP BY Client.VilleCli
+          <br>HAVING (((Client.VilleCli) Like "*Nantes*"));
+
+        </pre>
+      </div>
+    </section>
+
+    <section id="3ème_Indicateur_intéressant">
+      <h2> 4. 3ème Indicateur intéressant pour KDou</h2>
+      <div id="3ème_Interprétation">
+        <h3>4.1 Énoncé/Interprétation</h3>
+        <p>
+          Est-ce qu’il y a dans la clientèle des clients qui n’ont pas encore passé de commande ?.<br>
+          Cette requête permet d'identifier les clients n'ayant pas encore passé de commande, une information
+          clé pour cibler des actions marketing et commerciales spécifiques. L'entreprise pourrait ainsi
+          relancer ces clients potentiels, comprendre les raisons de leur inactivité et améliorer la fidélisation.
+
+        </p>
+      </div>
+      <div id="3ème_resultat">
+        <h3>4.2 Résultat</h3>
+        <table class="tab_res3">
+          <thead>
+          <tr>
+            <th> CodeCli </th>
+            <th> SociétéCli </th>
+            <th> ContactCli </th>
+            <th> AdresseCli </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>MAKOU</td>
+            <td>Le Marikou</td>
+            <td>Mael Sporto</td>
+            <td>3 Rue Sainte-Catherine</td>
+          </tr>
+          <tr>
+            <td>MORJU</td>
+            <td>Les Morainières</td>
+            <td>Julie Kas</td>
+            <td>22 Rue des Bouchers</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="3ème_QBE/SQL">
+        <h3>4.3 QBE/SQL</h3>
+        <pre>
+          <br><br>SELECT Client.CodeCli, Client.SocieteCli,
+          <br>Client.ContactCli,Client.AdresseCli
+          <br>FROM Client
+          <br>WHERE Client.CodeCli NOT IN
+          <br>(SELECT CodeCli FROM Commande)
+        </pre>
+      </div>
+    </section>
+
+    <section id="4ème_Indicateur_intéressant">
+      <h2> 5. 4ème Indicateur intéressant pour KDou</h2>
+      <div id="4ème_Interprétation">
+        <h3>5.1 Énoncé/Interprétation</h3>
+        <p>
+          Dans quelles villes la clientèle est-elle la plus importante ? Citer les 3 premières. <br>
+          Cette requête permet d'identifier les 3 villes où l'entreprise a le plus de clients.
+          Cette information peut être utile pour cibler les efforts marketing et commerciaux
+          dans ces zones géographiques clés. L'entreprise pourrait ainsi concentrer ses ressources
+          là où la demande est la plus importante, optimiser la logistique et la distribution, et mieux
+          répondre aux besoins spécifiques de ces clients. En complément, il serait intéressant d'analyser
+          d'autres informations telles que le chiffre d'affaires ou la marge par ville, afin d'avoir
+          une vision plus complète de l'importance stratégique de chaque zone géographique.
+        </p>
+      </div>
+      <div id="4ème_resultat">
+        <h3>5.2 Résultat</h3>
+        <table class="tab_res4">
+        <thead>
+        <tr>
+          <th>VilleCli</th>
+          <th>CompteCli</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Agen</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Paris</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Nantes</td>
+          <td>3</td>
+        </tr>
+        </tbody>
+      </table>
+      </div>
+      <div id="4ème_QBE/SQL">
+        <h3>5.3 QBE/SQL</h3>
+        <div class="QBE4_mission2"><img src="../images/mission2/4e_QBE_Mission2.jpg" alt ="QBE4_mission2"></div>
+      </div>
+    </section>
+    </section>
+  </div>
+
+
+
+  <a href="#" class="back-to-top">↑ Remonter vers le haut de page </a>
+      <!--footer-->
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Colonne 1 -->
+      <div class="footer-section">
+        <h3>À propos</h3>
+        <p>Fine équipe de 4 étudiants de l'IUT Rives-De-Seine en BUT 1 Informatique</p>
+      </div>
+
+
+      <!-- Colonne 2 -->
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>
+          Email du professeur: laurent.giustignano@u-paris.fr<br>
+          Adresse: 143 avenue de Versailles, 75016 Paris
+        </p>
+      </div>
+
+      <!-- Colonne 3 -->
+      <div class="footer-section">
+        <h3>Suivez-nous</h3>
+        <div class="lien-sociaux">
+          <a href="https://github.com/Crcos/Dev_SAE-S1-04"> <img src="../images/icons/github_img.png" class="footer-github" alt="Github logo"> </a>
+          <a href="https://u-paris.fr/"><img src="../images/icons/IUT-logo.png" class="footer-IUT" alt="logo IUT Paris Cité"> </a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <p>&copy; 2024 Etudiant IUT Rives-De-Seine. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <!--footer-->
+</body>
+</html>
