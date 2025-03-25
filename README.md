@@ -1,2 +1,6 @@
 # Rapport-SAE-de-Donnee
-Bonjour, vous pouvez trouver ici le rapport notre analyse de la base de donnée d'une épicerie en ligne appelé KDou. 
+Le site web, composé de cinq pages, présente notre travail réalisé au fil des semaines. Chaque mission correspond aux consignes que nous devions traiter à l’aide de requêtes SQL afin d’explorer et d’analyser la base de données.
+
+Ce site constitue le rendu final du projet et met en avant notre démarche avec rigueur et précision.
+
+Projet réalisé par : Selyan Idri, Célia Xu, Dora Ben Hadj Younes, Mathieu San Luis.
